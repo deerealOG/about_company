@@ -16,7 +16,7 @@ body {
 #navbar {
   position: absolute;
   background: #262262;
-  height: 80px;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -25,6 +25,13 @@ body {
   padding-left: 2vw;
   transition: all 0.7s ease-in;
   z-index: 500;
+}
+
+.down, .dropdown {
+  transition: all .5s ease;
+}
+.rotate {
+  transform: rotate(180deg);
 }
 
 #userdetails {
@@ -51,7 +58,7 @@ body {
 }
 #avatar img {
   height: auto;
-  width: 50px;
+  width: 40px;
 }
 #username {
   padding: 0;
@@ -71,12 +78,10 @@ body {
   cursor: pointer;
 }
 #logo img {
-  height: 3.375rem;
+  height: 40px;
 }
 
-#hamburger {
-  color: #ffffff;
-}
+
 #desktop {
   display: none;
 }
@@ -99,10 +104,10 @@ body {
 
 .hamburger div {
   position: relative;
-  top: -6px;
+  top: -0.8em;
   right: 5%;
-  width: 2.6em;
-  height: 6px;
+  width: 2em;
+  height: 4px;
   border-radius: 3px;
   background: #f37821;
   margin-top: 8px;
@@ -162,7 +167,7 @@ Animations
 }
 #toggle:checked + .hamburger .meat {
   transform: rotate(45deg);
-  margin-top: -6px;
+  margin-top: -4px;
 }
 
 #toggle:checked + .hamburger + .nav {
@@ -183,7 +188,7 @@ Animations
 }
 #toggle:checked + .hamburger .meat {
   transform: rotate(45deg);
-  margin-top: -6px;
+  margin-top: -4px;
 }
 
 #toggle:checked + .hamburger + .nav {
@@ -209,7 +214,7 @@ Animations
   width: 100%;
   height: 40px;
   left: 0px;
-  top: 133px;
+  top: 100px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -218,7 +223,7 @@ Animations
 }
 #dropDownCont {
   position: fixed;
-  top: 80px;
+  top: 60px;
   right: 0px;
   z-index: 100;
   background: #262262;
@@ -288,12 +293,11 @@ Animations
   text-decoration: none;
   color: #ffffff;
 }
-main {
-  padding: 20px;
-}
+
 #container {
   position: relative;
   top: 200px;
+  left: 5vw;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -559,14 +563,17 @@ aside {
   #navbar {
     position: fixed;
   }
+  #logo img {
+    height: 45px;
+  }
   #navcta {
     display: none;
   }
-  #brandname {
-    left: 90px;
-  }
   .caret {
     display: flex;
+  }
+  .nav {
+    display: none;
   }
 
   #desktop {
@@ -629,6 +636,9 @@ aside {
     color: white;
     display: block;
   }
+  #title {
+    top: 120px;
+  }
 
   aside {
     width: 300px;
@@ -660,9 +670,7 @@ aside {
   aside {
     width: 30vw;
   }
-  #bigContainer span {
-    width: 30vw;
-  }
+ 
   #category {
     width: 600px;
   }
